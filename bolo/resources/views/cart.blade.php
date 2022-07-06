@@ -1,14 +1,17 @@
 @extends('layouts.app')
+@section('top-title','Heaven’s Gate Records')
+
 @section('content')
-    <div class="row mx-5">
-        <div class="col-md-2">
+    <div class="m-0 p-0 row w-100">
+        <div class="col-md-2" id="side-section">
             @include('includes.recent-adds')
         </div>
-        <div class="col-md-10">
+        <div class="cart-block">
             <div class="cart-items">
                 <div class="d-flex cart-item">
-                    <div class="item-image mx-4">
-                        <img class="img-fluid" class="h-100" src="{{ asset('Assets/Images/R-7696672-1447303028-4579.jpeg.png') }}" alt="">
+                    <div class="item-image">
+                        <img class="img-fluid" class="h-100"
+                            src="{{ asset('Assets/Images/R-7696672-1447303028-4579.jpeg.png') }}" alt="">
                     </div>
                     <div class="d-flex flex-column item-details justify-content-between">
                         <p>Bodywave 12” Waves Jazz Dance Records, U.S.A. 1986 vg+/EX</p>
@@ -19,8 +22,9 @@
                     </div>
                 </div>
                 <div class="d-flex cart-item mt-4">
-                    <div class="item-image mx-4">
-                        <img class="img-fluid" class="h-100" src="{{ asset('Assets/Images/R-15793316-1597888782-9556.jpeg.png') }}" alt="">
+                    <div class="item-image">
+                        <img class="img-fluid" class="h-100"
+                            src="{{ asset('Assets/Images/R-15793316-1597888782-9556.jpeg.png') }}" alt="">
                     </div>
                     <div class="d-flex flex-column item-details justify-content-between">
                         <p>I Still Dream Of You 7” Dennis Planter Hot Box, U.K. 1986 vg/VG+</p>
@@ -51,7 +55,8 @@
                     <input type="text" class="form-control mb-2 w-100" placeholder="Post Code" name="name">
                     <input type="text" class="form-control mb-2 w-100" placeholder="State/Region" name="name">
                     <input type="text" class="form-control mb-2 w-100" placeholder="Country" name="name">
-                    <textarea class="form-control mb-2 w-100" name="" id="" cols="30" rows="10" placeholder="ADDITIONAL NOTES"></textarea>
+                    <textarea class="form-control mb-2 w-100" name="" id="" cols="30" rows="10"
+                        placeholder="ADDITIONAL NOTES"></textarea>
                     <button class="btn btn-success">Checkout</button>
                 </form>
             </div>

@@ -1,10 +1,10 @@
 @extends('layouts.app')
 @section('content')
-    <div class="row mx-5">
-        <div class="col-md-2">
+    <div class="m-0 p-0 row w-100">
+        <div class="col-md-2" id="side-section">
             @include('includes.recent-adds')
         </div>
-        <div class="col-md-10">
+        <div class="account-page">
             <div class="post">
                 <span class="d-block mb-1 fw-bold">May 31, 2022: Earth Coincidence Control Office</span>
                 <img src="{{ asset('Assets/Images/pete.png') }}" alt="">

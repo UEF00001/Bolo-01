@@ -1,13 +1,14 @@
 @extends('layouts.app')
+@section('top-title','Heaven’s Gate Records')
 @section('content')
-    <div class="row mx-5">
-        <div class="col-md-2">
+    <div class="m-0 p-0 row w-100">
+        <div class="col-md-2" id="side-section">
             @include('includes.recent-adds')
         </div>
-        <div class="col-md-10">
-            <div class="blog">
-                <span class="d-block">Last Updated: 09/11/21</span>
-                <div class="text-center">
+        <div class="mx-auto p-0" id="main-content">
+            <div class="main-read">
+                <span class="d-block mb-2">Last Updated: 09/11/21</span>
+                <div>
                     <img src="{{ asset('Assets/Images/gettyimages-156478811-2048x2048.png') }}" alt="">
                 </div>
                 <div class="blog-content mt-2">
@@ -25,36 +26,36 @@
                     </p>
                 </div>
             </div>
-            <div class="blog row mt-5">
-                <div class="d-flex flex-column col-md-3">
-                    <img style="max-width:17rem" src="{{ asset('Assets/Images/R-2406404-1366293407-8559.jpeg.png') }}" alt="">
-                    {{-- <span class="text-center">Raw</span>
-                    <span class="text-center">Land</span> --}}
+        </div>
+        <div class="blog row my-5">
+            <div class="d-flex flex-column col-md-3 img-div">
+                <img class="img-resposive" src="{{ asset('Assets/Images/R-2406404-1366293407-8559.jpeg.png') }}" alt="">
+                {{-- <span class="text-center">Raw</span>
+                <span class="text-center">Land</span> --}}
+            </div>
+            <div class="d-flex flex-column col-md-9 content-div">
+                <div class="vinyl-details mb-3 d-flex flex-column">
+                    <span>Land 12”</span>
+                    <span>Raw</span>
+                    <span>Trollo, Greece 1984</span>
+                    <span>VG+/VG</span>
+                    <span>€119.00</span>
                 </div>
-                <div class="d-flex flex-column col-md-9">
-                    <div class="vinyl-details mb-3 d-flex flex-column">
-                        <span>Land 12”</span>
-                        <span>Raw</span>
-                        <span>Trollo, Greece 1984</span>
-                        <span>VG+/VG</span>
-                        <span>€119.00</span>
-                    </div>
-                    <p>
-                        In a much nicer neighbourhood than mine, I often see a woman walking two Puli dogs, the ones that
-                        resemble rag mops. The particular way they bounce gives one the sense that they each weigh a lot but
-                        do not touch the ground. Their eyes and legs are not visible. Another woman in the same
-                        neighbourhood walks a large pig. Children are always running towards it as if it were petting zoo
-                        entertainment, which is to be expected. This woman and the one with the Puli pair are visibly
-                        impatient, though, irritated by all the attention their animals get. I imagine them, individually,
-                        at home, marvelling at the strange qualities that make up these creatures, resentful that a price
-                        for owning this opportunity is to take them outside all the time. What non-walking things are being
-                        hidden away here, I wonder, these odd pets acting as inadvertent commercials.
-                    </p>
-                    <div class="actions d-flex flex-column text-center mx-auto">
-                        <a href="{{ url('raw-land') }}" class="btn btn-secondary">View Record</a>
-                        <a href="" class="btn btn-secondary my-2">View Recent Adds</a>
-                        <a href="" class="btn btn-secondary">View Boogie</a>
-                    </div>
+                <p>
+                    In a much nicer neighbourhood than mine, I often see a woman walking two Puli dogs, the ones that
+                    resemble rag mops. The particular way they bounce gives one the sense that they each weigh a lot but
+                    do not touch the ground. Their eyes and legs are not visible. Another woman in the same
+                    neighbourhood walks a large pig. Children are always running towards it as if it were petting zoo
+                    entertainment, which is to be expected. This woman and the one with the Puli pair are visibly
+                    impatient, though, irritated by all the attention their animals get. I imagine them, individually,
+                    at home, marvelling at the strange qualities that make up these creatures, resentful that a price
+                    for owning this opportunity is to take them outside all the time. What non-walking things are being
+                    hidden away here, I wonder, these odd pets acting as inadvertent commercials.
+                </p>
+                <div class="actions d-flex flex-column text-center mx-auto">
+                    <a href="{{ url('raw-land') }}" class="btn btn-secondary">View Record</a>
+                    <a href="" class="btn btn-secondary my-2">View Recent Adds</a>
+                    <a href="" class="btn btn-secondary">View Boogie</a>
                 </div>
             </div>
         </div>
