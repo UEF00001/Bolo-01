@@ -7,7 +7,7 @@
         </div>
         <div class="mx-auto p-0" id="main-content">
             <div class="main-read">
-                <span class="d-block mb-2">Last Updated: 09/11/21</span>
+                <span class="d-block mb-2" style="font-size: 24px">Last Updated: 09/11/21</span>
                 <div>
                     <img src="{{ asset('Assets/Images/gettyimages-156478811-2048x2048.png') }}" alt="">
                 </div>
@@ -53,9 +53,9 @@
                     hidden away here, I wonder, these odd pets acting as inadvertent commercials.
                 </p>
                 <div class="actions d-flex flex-column text-center mx-auto">
-                    <a href="{{ url('raw-land') }}" class="btn btn-secondary">View Record</a>
-                    <a href="" class="btn btn-secondary my-2">View Recent Adds</a>
-                    <a href="" class="btn btn-secondary">View Boogie</a>
+                    <a href="{{ url('raw-land') }}" class="text-decoration-none text-dark standard-font">View Record</a>
+                    <a href="" class="text-decoration-none text-dark standard-font my-2">View Recent Adds</a>
+                    <a href="" class="text-decoration-none text-dark standard-font">View Boogie</a>
                 </div>
             </div>
         </div>

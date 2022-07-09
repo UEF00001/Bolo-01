@@ -63,19 +63,18 @@
                         <li><a class="dropdown-item" href="{{ url('blog') }}">Blog</a></li>
                     </ul> --}}
                 {{-- </div> --}}
-                <li class="d-block mb-2"><a href="#" id="side-menu-small">Menu</a></li>
+                <li class="d-block mb-2"><a href="#" id="side-menu-small" class="bg-white text-dark">Menu</a></li>
 
             </ul>
             <!--end navbar-left -->
             <ul class="nav navbar-nav text-center d-inline-flex" id="brand-name">
                 <li class="nav-item">
-                    <h6 class="top-title">@yield('top-title')</h6>
+                    <h6 class="top-title"><span class="bg-white">@yield('top-title','Heaven’s Gate Records')</span></h6>
                 </li>
             </ul>
             <ul class="navbar-right p-1">
-                <li class="d-block mb-2"><a href="#" id="cart"><i class="fa fa-shopping-cart"></i> Cart <span
-                            class="badge">3</span></a></li>
-                <li class="d-block mb-2"><a href="#" id="search">Search</a></li>
+                <li class="d-block mb-3"><a href="#" id="cart" class="text-dark">Cart(3)</a></li>
+                <li class="d-block mb-2"><a href="#" id="search" class="text-dark">Search</a></li>
             </ul>
             <!--end navbar-right -->
         </div>
@@ -88,21 +87,35 @@
                 <li class="clearfix">
                     <img class="cart-img" src="{{ asset('Assets/Images/R-7696672-1447303028-4579.jpeg.png') }}"
                         alt="item1" />
-                    <span class="item-name">Bodywave 12” Waves Jazz Dance Records, U.S.A. 1986 vg+/ex</span>
-                    <span class="remove-cart-item pointer-cursor">Remove</span>
-                    <span class="item-price">€139.00</span>
+                    <span class="item-name">Bodywave 12”</span>
+                    <span class="item-name">Waves</span>
+                    <span class="item-name">Jazz Dance Records, U.S.A. 1986</span>
+                    <span class="item-name">VG+/EX</span>
+                    <div class="d-flex justify-content-between">
+                        <span class="remove-cart-item pointer-cursor">(Remove)</span>
+                        <span class="item-price">€139.00</span>
+                    </div>
                 </li>
 
                 <li class="clearfix mt-2">
                     <img class="cart-img" src="{{ asset('Assets/Images/R-15793316-1597888782-9556.jpeg.png') }}"
                         alt="item1" />
-                    <span class="item-name">I Still Dream Of You 7” Dennis Planter Hot Box, U.K. 1986 vg/VG+</span>
-                    <span class="remove-cart-item pointer-cursor">Remove</span>
-                    <span class="item-price">€89.00</span>
+                    <span class="item-name">I Still Dream Of You 7”</span>
+                    <span class="item-name">Dennis Planter</span>
+                    <span class="item-name">Hot Box, U.K. 1986</span>
+                    <span class="item-name">VG/VG+</span>
+                    <div class="d-flex justify-content-between">
+                        <span class="remove-cart-item pointer-cursor">(Remove)</span>
+                        <span class="item-price">€89.00</span>
+                    </div>
                 </li>
             </ul>
-            <span class="total-price">Subtotal : <span id="total-amt">€228.00</span></span>
-            <a href="{{ url('cart') }}" class="checkout-button">Checkout</a>
+            <div class="d-flex justify-content-end pt-5">
+                <span class="total-price">Subtotal : <span id="total-amt">€228.00</span></span>
+            </div>
+            <div class="d-flex justify-content-end">
+                <a href="{{ url('cart') }}" class="text-decoration-none text-dark standard-font">(Check Out)</a>
+            </div>
         </div>
         <!--end shopping-cart -->
     </div>
@@ -134,31 +147,40 @@
     {{-- start side-menu-small dropdown --}}
     <div class="container">
         <div class="side-menu-small" style="display: none">
-            <h6 class="p-2">RECENT ADDS</h6>
+            <h6 class="p-2 standard-font">RECENT ADDS</h6>
             <ul class="shopping-cart-items p-1">
-                <li class="nav-item">
+                <li class="nav-ite standard-font">
                     <a class="nav-link p-0" href="#">Boogie</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-ite standard-font">
                     <a class="nav-link p-0" href="#">Esoteric</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-ite standard-font">
                     <a class="nav-link p-0" href="#">House</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-ite standard-font">
                     <a class="nav-link p-0" href="#">Pop Music</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-ite standard-font">
                     <a class="nav-link p-0" href="#">Tropical</a>
                 </li>
                 <br>
-                <li class="nav-item">
+                <li class="nav-ite standard-font">
                     <a class="nav-link p-0 @if(url()->current() == url('about')) active @endif" href="{{ url('about') }}">Information</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item about-sub-links">
+                    <a class="nav-link p-0" href="@if(url()->current() != url('about')) {{url('about')}}@endif#about">About</a>
+                </li>
+                <li class="nav-item about-sub-links">
+                    <a class="nav-link p-0" href="@if(url()->current() != url('about')) {{url('about')}}@endif#contact">Contact</a>
+                </li>
+                <li class="nav-item about-sub-links">
+                    <a class="nav-link p-0" href="@if(url()->current() != url('about')) {{url('about')}}@endif#shipping">Shipping</a>
+                </li>
+                <li class="nav-ite standard-font">
                     <a class="nav-link p-0" href="{{ url('account') }}">Account</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-ite standard-font">
                     <a class="nav-link p-0 @if(url()->current() == url('blog')) active @endif" href="{{ url('blog') }}">Blog</a>
                 </li>
             </ul>
@@ -183,7 +205,7 @@
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="{{ asset('js/main.js') }}"></script>
-
+    @stack('after-scripts')
 </body>
 
 </html>

@@ -14,10 +14,13 @@
                             src="{{ asset('Assets/Images/R-7696672-1447303028-4579.jpeg.png') }}" alt="">
                     </div>
                     <div class="d-flex flex-column item-details justify-content-between">
-                        <p>Bodywave 12” Waves Jazz Dance Records, U.S.A. 1986 vg+/EX</p>
+                        <span class="item-name standard-font">Bodywave 12”</span>
+                        <span class="item-name standard-font">Waves</span>
+                        <span class="item-name standard-font">Jazz Dance Records, U.S.A. 1986</span>
+                        <span class="item-name standard-font">VG+/EX</span>
                         <div class="d-flex justify-content-between">
-                            <a href="javascript:void(0)" class="btn btn-secondary">Remove</a>
-                            <span>€139.00</span>
+                            <span class="remove-cart-item pointer-cursor standard-font">(Remove)</span>
+                            <span class="item-price standard-font">€139.00</span>
                         </div>
                     </div>
                 </div>
@@ -27,12 +30,15 @@
                             src="{{ asset('Assets/Images/R-15793316-1597888782-9556.jpeg.png') }}" alt="">
                     </div>
                     <div class="d-flex flex-column item-details justify-content-between">
-                        <p>I Still Dream Of You 7” Dennis Planter Hot Box, U.K. 1986 vg/VG+</p>
+                        <span class="item-name standard-font">I Still Dream Of You 7”</span>
+                        <span class="item-name standard-font">Dennis Planter</span>
+                        <span class="item-name standard-font">Hot Box, U.K. 1986</span>
+                        <span class="item-name standard-font">VG/VG+</span>
                         <div class="d-flex justify-content-between">
-                            <a href="javascript:void(0)" class="btn btn-secondary">Remove</a>
-                            <span>€89.00</span>
+                            <span class="remove-cart-item pointer-cursor standard-font">(Remove)</span>
+                            <span class="item-price standard-font">€89.00</span>
                         </div>
-                    </div>
+                        </div>
                 </div>
             </div>
             <div class="calculation float-right">
