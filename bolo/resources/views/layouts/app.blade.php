@@ -69,11 +69,11 @@
             <!--end navbar-left -->
             <ul class="nav navbar-nav text-center d-inline-flex" id="brand-name">
                 <li class="nav-item">
-                    <h6 class="top-title"><span class="bg-white">@yield('top-title','Heaven’s Gate Records')</span></h6>
+                    <h6 class="top-title"><span class="bg-white">@yield('top-title', 'Heaven’s Gate Records')</span></h6>
                 </li>
             </ul>
             <ul class="navbar-right p-1">
-                <li class="d-block mb-3"><a href="#" id="cart" class="text-dark">Cart(3)</a></li>
+                <li class="d-block"><a href="#" id="cart" class="text-dark">Cart(3)</a></li>
                 <li class="d-block mb-2"><a href="#" id="search" class="text-dark">Search</a></li>
             </ul>
             <!--end navbar-right -->
@@ -123,23 +123,36 @@
     {{-- start search-menu dropdown --}}
     <div class="container">
         <div class="search-menu" style="display: none">
-            <input type="text" class="form-control" placeholder="Enter Search Terms Here">
-            <a href="" class="btn btn-secondary text-white mt-2 mb-4">Submit</a>
-            <h6 class="p-2">Results(3)</h6>
-            <ul class="shopping-cart-items">
-                <li class="clearfix">
-                    <a href="javascript:void(0)" class="item-name">Te Mono Ki Te Kainga Lp - Takaski Sima - Some Record
-                        Label, Japan 1986</a>
-                </li>
-                <li class="clearfix">
-                    <a href="javascript:void(0)" class="item-name">I Still Dream Of You 7” - Dennis Planter - Hot Box
-                        Llc, U.K. 1986</a>
-                </li>
-                <li class="clearfix">
-                    <a href="javascript:void(0)" class="item-name">When She Calls 12” - Keith Snipe - Not On Label,
-                        U.S.A. 1988</a>
-                </li>
-            </ul>
+            <input type="text" class="border-0 d-block mb-1 text-dark" placeholder="Enter Search Terms Here">
+            <a href="" class="standard-font text-dark text-decoration-none mt-2 mb-4">(Submit)</a>
+            <h6 class="standard-font" style="padding-top: 64px">Results(3)</h6>
+            <div class="row">
+                <div class="search-result pointer-cursor col-6" onclick="location.href='{{ url('get-happy') }}';">
+                    <img class="img-fluid" src="{{ asset('Assets/Images/R-15793316-1597888782-9556.jpeg.png') }}"
+                        alt="">
+                    <p class="mb-0 standard-font">Touche-Moi 12” Not 2 Bad Feat.</p>
+                    <p class="standard-font">Camile</p>
+                </div>
+                <div class="search-result pointer-cursor col-6"
+                    onclick="location.href='{{ url('when-she-calls-club-mix') }}';">
+                    <img class="img-fluid" src="{{ asset('Assets/Images/R-17152054-1611868791-8576.jpeg.png') }}"
+                        alt="">
+                    <p class="mb-0 standard-font">When She Calls 12”</p>
+                    <p class="standard-font">Keith Snipe</p>
+                </div>
+                <div class="search-result pointer-cursor col-6" onclick="location.href='{{ url('raw-land') }}';">
+                    <img class="img-fluid" src="{{ asset('Assets/Images/R-2406404-1366293407-8559.jpeg.png') }}"
+                        alt="">
+                    <p class="mb-0 standard-font">Make A Show 12”</p>
+                    <p class="standard-font">Daina Sutherland</p>
+                </div>
+                <div class="search-result pointer-cursor col-6" onclick="location.href='{{ url('raw-land') }}';">
+                    <img class="img-fluid" src="{{ asset('Assets/Images/R-2406404-1366293407-8559.jpeg.png') }}"
+                        alt="">
+                    <p class="mb-0 standard-font">Make A Show 12”</p>
+                    <p class="standard-font">Daina Sutherland</p>
+                </div>
+            </div>
         </div>
         <!--end shopping-cart -->
     </div>
@@ -165,23 +178,30 @@
                     <a class="nav-link p-0" href="#">Tropical</a>
                 </li>
                 <br>
-                <li class="nav-ite standard-font">
-                    <a class="nav-link p-0 @if(url()->current() == url('about')) active @endif" href="{{ url('about') }}">Information</a>
+                <li class="nav-ite standard-font" id="info">
+                    <a class="nav-link p-0 @if (url()->current() == url('about')) active @endif"
+                        href="{{ url('about') }}">Information</a>
                 </li>
-                <li class="nav-item about-sub-links">
-                    <a class="nav-link p-0" href="@if(url()->current() != url('about')) {{url('about')}}@endif#about">About</a>
-                </li>
-                <li class="nav-item about-sub-links">
-                    <a class="nav-link p-0" href="@if(url()->current() != url('about')) {{url('about')}}@endif#contact">Contact</a>
-                </li>
-                <li class="nav-item about-sub-links">
-                    <a class="nav-link p-0" href="@if(url()->current() != url('about')) {{url('about')}}@endif#shipping">Shipping</a>
-                </li>
+                <div class="py-3">
+                    <li class="nav-item about-sub-links d-none">
+                        <a class="nav-link p-0"
+                            href="@if (url()->current() != url('about')) {{ url('about') }}@endif#about">About</a>
+                    </li>
+                    <li class="nav-item about-sub-links d-none">
+                        <a class="nav-link p-0"
+                            href="@if (url()->current() != url('about')) {{ url('about') }}@endif#contact">Contact</a>
+                    </li>
+                    <li class="nav-item about-sub-links d-none">
+                        <a class="nav-link p-0"
+                            href="@if (url()->current() != url('about')) {{ url('about') }}@endif#shipping">Shipping</a>
+                    </li>
+                </div>
                 <li class="nav-ite standard-font">
                     <a class="nav-link p-0" href="{{ url('account') }}">Account</a>
                 </li>
                 <li class="nav-ite standard-font">
-                    <a class="nav-link p-0 @if(url()->current() == url('blog')) active @endif" href="{{ url('blog') }}">Blog</a>
+                    <a class="nav-link p-0 @if (url()->current() == url('blog')) active @endif"
+                        href="{{ url('blog') }}">Blog</a>
                 </li>
             </ul>
         </div>
@@ -190,7 +210,7 @@
     {{-- end side-menu-small dropdown --}}
     <main class="mt-5">
         @yield('content')
-        <div class="m-2 mt-5">
+        <div class="m-2 mt-5" id="footer-div">
             <footer class="d-flex flex-column flex-wrap justify-content-between">
                 <p class="col-md-4 mb-0 text-muted">Instagram</p>
                 <p class="col-md-4 mb-0 text-muted">Mailing List</p>
