@@ -23,7 +23,7 @@ body {
 }
 
 .lighter-text {
-    color: black;
+    color: #abb0be;
 }
 
 p,
@@ -33,12 +33,12 @@ li {
 }
 
 .main-color-text {
-    color: black;
+    color: #6394f8;
 }
 
 .calculation {
     text-align: right;
-    margin-top: 88px;
+    margin-top: 5rem;
 }
 
 #search-form {
@@ -61,7 +61,7 @@ li {
 #side-section {
     position: fixed;
     top: 0px;
-    padding: 16px;
+    padding: 9px;
 }
 
 .blog {
@@ -138,11 +138,11 @@ nav .navbar-right {
 nav ul.navbar-right li,
 nav ul#brand-name li {
     display: inline;
-    padding-left: 16px;
+    padding-left: 20px;
 }
 
 ul li a {
-    color: black !important;
+    color: #777 !important;
     text-decoration: none !important;
 }
 
@@ -159,7 +159,7 @@ ul li a {
 }
 
 .post {
-    margin-bottom: 16px;
+    margin-bottom: 2rem;
 }
 
 .nav-link.active {
@@ -182,35 +182,35 @@ nav ul li a:hover {
 /* cart dd */
 
 .badge {
-    background-color: black;
-    border-radius: 0px;
+    background-color: #6394f8;
+    border-radius: 10px;
     color: white;
     display: inline-block;
-    font-size: 24px;
+    font-size: 12px;
     line-height: 1;
-    padding: 4px 4px;
+    padding: 3px 7px;
     text-align: center;
     vertical-align: middle;
     white-space: nowrap;
 }
 
 .shopping-cart {
-    margin: 16px 0;
+    margin: 20px 0;
     float: right;
     background: white;
     width: 50%;
     position: absolute;
     right: 0;
-    top: 16px;
-    border-radius: 0px;
+    top: 17px;
+    border-radius: 3px;
     padding: 4px;
     z-index: 9;
     height: 100%;
 }
 
 .shopping-cart .shopping-cart-header {
-    border-bottom: 0px solid #e8e8e8;
-    padding-bottom: 16 px;
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 15px;
 }
 
 .shopping-cart .shopping-cart-header .shopping-cart-total {
@@ -218,17 +218,17 @@ nav ul li a:hover {
 }
 
 .shopping-cart .shopping-cart-items {
-    padding: 16px !important;
+    padding: 0.5rem!important;
 }
 
 .shopping-cart .shopping-cart-items li {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
 }
 
 .shopping-cart .shopping-cart-items img {
     float: left;
-    margin-right: 16px;
-    margin-top: 16px;
+    margin-right: 12px;
+    margin-top: 11px;
 }
 
 .shopping-cart .shopping-cart-items .item-name {
@@ -249,8 +249,8 @@ nav ul li a:hover {
 
 .shopping-cart .shopping-cart-items .remove-cart-item {
     color: #000;
-    margin-top: 16px;
-    margin-right: 16px;
+    margin-top: 3px;
+    margin-right: 31px;
 }
 
 .shopping-cart:after {
@@ -263,30 +263,32 @@ nav ul li a:hover {
     position: absolute;
     pointer-events: none;
     border-bottom-color: white;
+    border-width: 8px;
     margin-left: -8px;
 }
 
 .cart-icon {
-    color: black;
+    color: #515783;
     font-size: 24px;
-    margin-right: 16px;
+    margin-right: 7px;
     float: left;
     line-height: 24px;
 }
 
 .checkout-button {
-    background: none;
+    background: #6394f8;
     color: white;
     text-align: center;
-    padding: 16px;
+    padding: 12px;
     text-decoration: none;
     display: block;
-    border-radius: 0px;
-    font-size: 24px;
+    border-radius: 3px;
+    font-size: 16px;
+    margin: 25px 29px 15px 29px;
 }
 
 .checkout-button:hover {
-    background: none;
+    background: #729ef9;
 }
 
 .clearfix:after {
@@ -300,7 +302,7 @@ nav ul li a:hover {
 }
 
 .shopping-cart-items li a {
-    color: black;
+    color: #777;
     text-decoration: none;
 }
 
@@ -319,38 +321,38 @@ nav ul li a:hover {
 /* search menu start */
 
 .search-menu {
-    margin: 16px 0;
+    margin: 20px 0;
     float: right;
     background: white;
     width: 320px;
     position: absolute;
     right: 0;
-    top: 64px;
-    border-radius: 0px;
+    top: 65px;
+    border-radius: 3px;
     padding: 16px;
     height: 100%;
     z-index: 999999;
 }
 
 .search-menu .shopping-cart-items {
-    padding: 0px!important;
+    padding: 0.5rem!important;
 }
 
 .search-menu .shopping-cart-items li {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
 }
 
 .search-menu .shopping-cart-items img {
     float: left;
-    margin-right: 16px;
-    margin-top: 16px;
+    margin-right: 12px;
+    margin-top: 11px;
 }
 
 .search-menu .shopping-cart-items .item-name {
     display: block;
-    padding-top: 16px;
+    padding-top: 10px;
     font-size: 16px;
-    margin-bottom: 16px!important;
+    margin-bottom: 1rem!important;
 }
 
 .search-menu .shopping-cart-items .item-price {
@@ -360,8 +362,8 @@ nav ul li a:hover {
 
 .search-menu .shopping-cart-items .remove-cart-item {
     color: #000;
-    margin-top: 16px;
-    margin-right: 16px;
+    margin-top: 3px;
+    margin-right: 31px;
 }
 
 .search-menu:after {
@@ -390,7 +392,7 @@ nav ul li a:hover {
     width: 37.89%;
     position: absolute;
     left: 0;
-    border-radius: 0px;
+    border-radius: 3px;
     padding: 4px;
     height: 100%;
     z-index: 999999;
@@ -398,18 +400,18 @@ nav ul li a:hover {
 }
 
 .side-menu-small .shopping-cart-items {
-    padding: 16px!important;
+    padding: 0.5rem!important;
 }
 
 .side-menu-small .shopping-cart-items li {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
 }
 
 .side-menu-small .shopping-cart-items .item-name {
     display: block;
-    padding-top: 16px;
+    padding-top: 10px;
     font-size: 16px;
-    margin-bottom: 16px!important;
+    margin-bottom: 1rem!important;
 }
 
 .side-menu-small .shopping-cart-items .item-price {
@@ -473,7 +475,7 @@ nav ul li a:hover {
 }
 
 .item-image {
-    margin-right: 0px;
+    margin-right: 0.7rem;
 }
 
 .account-page {
@@ -500,7 +502,6 @@ nav ul li a:hover {
 
 .vinyl-title {
     font-family: Luminari;
-    font-size: 24px;
 }
 
 div.search-result:nth-child(odd) {
@@ -614,7 +615,7 @@ div.search-result:nth-child(even) {
         padding: 0;
     }
     .genre-items {
-        padding: 0px;
+        padding: 8px;
     }
     .shopping-cart {
         width: 60.21%;
